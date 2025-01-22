@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "homework-21-2"
+version = "0.1.0"
+description = ""
+authors = ["Eduard <barned85@gmail.com>"]
+readme = "README.md"
+packages = [{include = "homework_21_2"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.lint.dependencies]
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+mypy = "^1.14.1"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+exclude = '.git'
